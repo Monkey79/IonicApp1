@@ -1,0 +1,13 @@
+<div id="example-item-thumbnails" class="ionic-body active-preview">
+    <div class="content has-header ionic-pseudo">
+        <div class="list wrapping-list">
+            <ion-scroll class="" direction="y" style="width: 500px; height: 600px">
+                <a class="item item-thumbnail-left" href="#" ng-repeat="item in data.items" ng-click="itemClickHndl(item)">
+                    <img src="{{item.thumbnail}}">
+                    <h2>{{item.title}}</h2>
+                    <p>${{item.price}}</p>
+                </a>
+            </ion-scroll>
+        </div>
+    </div>
+</div>

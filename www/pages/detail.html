@@ -1,0 +1,35 @@
+<div class="bar bar-header">
+    <div class="h1 title">Cards</div>
+</div>
+<div class="content has-header">
+    <ion-scroll class="" direction="xy" style="width: 400px; height: 600px">
+        <div class="list card">
+            <div class="item item-avatar">
+                <img src="{{data.item.thumbnail}}">
+                <h2>{{data.item.title}}</h2>
+                <p>Estado: {{data.item.condition}} Precio: ${{data.item.price}}</p>
+            </div>
+            <div class="item item-body">
+                <img class="full-image" src="{{data.item.picture}}">
+                <p>
+                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item, the content is from a card-body consisting of an image and paragraph text. The footer consists of a tabs, icons aligned left, within the card-footer.
+                </p>
+                <p>
+                    <a href="#" class="subdued">1 Like</a>
+                    <a href="#" class="subdued">5 Comments</a>
+                </p>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" href="#">
+                    <i class="icon ion-thumbsup"></i> Like
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-chatbox"></i> Comment
+                </a>
+                <a class="tab-item" href="#">
+                    <i class="icon ion-share"></i> Share
+                </a>
+            </div>
+        </div>
+    </ion-scroll>
+</div>
